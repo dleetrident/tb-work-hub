@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  height: 75vh;
+}
+
+.gridcontainer {
+  height: 80%;
+}

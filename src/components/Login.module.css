@@ -1,0 +1,33 @@
+.container {
+  margin: 0 auto;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.form {
+  padding: 2%;
+}
+
+.form label {
+  display: block;
+  margin: 1% auto;
+
+  position: relative;
+}
+
+.form button {
+  margin: 2% 2% 4%;
+
+  position: relative;
+}
+
+.form-error {
+  color: red;
+}
+
+.button {
+  height: 10%;
+  width: 18%;
+  margin-top: 30%;
+}

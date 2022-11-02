@@ -1,0 +1,16 @@
+.card {
+  background-image: url(../Assets/Container.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  margin: 5% auto;
+  width: 50%;
+  height: 80%;
+  z-index: 9999;
+}
+
+.cardheader {
+  font-size: 1em;
+  margin-top: 1em;
+}

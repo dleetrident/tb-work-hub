@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: white;
+  font-weight: 500;
+  position: relative;
+  margin: 4% auto;
+}

@@ -1,22 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+import Login from "./components/Login";
+import MainHub from "./components/MainHub";
+import AuthProvider from "./store/AuthProvider";
+import { useContext, useEffect, useState } from "react";
+import AuthContext from "./store/auth-context";
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Therapy Box Work Hub App Test</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const authCtx = useContext(AuthContext);
+
+  return <div>{authCtx.authState ? <MainHub /> : <Login />}</div>;
 }
 
 export default App;
