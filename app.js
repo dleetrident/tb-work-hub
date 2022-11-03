@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
-const http = require("http");
-const server = http.createServer(app);
-const xmlparser = require("express-xml-bodyparser");
+
 const cors = require("cors");
 
 const path = require("path");
