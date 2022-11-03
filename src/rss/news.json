@@ -1,0 +1,634 @@
+{
+  "rss": {
+    "channel": {
+      "title": {
+        "__cdata": "BBC News - Home"
+      },
+      "description": {
+        "__cdata": "BBC News - Home"
+      },
+      "link": "https://www.bbc.co.uk/news/",
+      "image": {
+        "url": "https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif",
+        "title": "BBC News - Home",
+        "link": "https://www.bbc.co.uk/news/"
+      },
+      "generator": "RSS for Node",
+      "lastBuildDate": "Thu, 03 Nov 2022 12:19:34 GMT",
+      "copyright": {
+        "__cdata": "Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse."
+      },
+      "language": {
+        "__cdata": "en-gb"
+      },
+      "ttl": 15,
+      "item": [
+        {
+          "title": {
+            "__cdata": "Bank of England expects UK to fall into longest ever recession"
+          },
+          "description": {
+            "__cdata": "The Bank of England warns UK faces a \"challenging\" two-year slump - the longest since records began."
+          },
+          "link": "https://www.bbc.co.uk/news/business-63471725?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-63471725",
+          "pubDate": "Thu, 03 Nov 2022 12:15:54 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Pakistan ex-PM Imran Khan shot and wounded at protest march"
+          },
+          "description": {
+            "__cdata": "Former Pakistan Prime Minister Imran Khan is shot in an apparent attempt on his life in Wazirabad."
+          },
+          "link": "https://www.bbc.co.uk/news/world-asia-63496202?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-asia-63496202",
+          "pubDate": "Thu, 03 Nov 2022 12:10:12 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "West Lane Hospital: Government apologises after teenager deaths"
+          },
+          "description": {
+            "__cdata": "Health minister Maria Caulfield tells MPs the investigation findings \"make for painful reading\"."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-tees-63499602?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-tees-63499602",
+          "pubDate": "Thu, 03 Nov 2022 12:14:28 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Manchester Arena bomb hero says response was all wrong"
+          },
+          "description": {
+            "__cdata": "A man who fought to save a victim of the 2017 Manchester bombing says \"big mistakes\" were made."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-manchester-63486473?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-manchester-63486473",
+          "pubDate": "Thu, 03 Nov 2022 09:04:10 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cold, hungry migrants left stranded in London"
+          },
+          "description": {
+            "__cdata": "The group was moved out of an overcrowded facility in Kent but given nowhere to stay, the BBC is told."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-63489901?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-63489901",
+          "pubDate": "Thu, 03 Nov 2022 12:11:55 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "NHS disruption driving rise in heart deaths, charity says"
+          },
+          "description": {
+            "__cdata": "Ambulance delays and waiting lists are driving excess cardiac deaths, the British Heart Foundation says."
+          },
+          "link": "https://www.bbc.co.uk/news/health-63486547?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/health-63486547",
+          "pubDate": "Thu, 03 Nov 2022 03:58:27 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Hadis Najafi: Iran police clash with mourners of female protester"
+          },
+          "description": {
+            "__cdata": "Thousands tried to reach the grave of Hadis Najafi, who became a symbol of anti-government protests."
+          },
+          "link": "https://www.bbc.co.uk/news/world-middle-east-63498820?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-middle-east-63498820",
+          "pubDate": "Thu, 03 Nov 2022 11:08:22 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "David Fuller: Double murderer pleads guilty to more mortuary sexual abuse"
+          },
+          "description": {
+            "__cdata": "Ex-hospital electrician David Fuller is serving a whole-life sentence for the murder of two women."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-kent-63488309?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-kent-63488309",
+          "pubDate": "Thu, 03 Nov 2022 10:40:29 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Don't blame us for UK border problems, says Albanian PM"
+          },
+          "description": {
+            "__cdata": "PM Edi Rama tells the BBC the UK was singling out his country to excuse \"failed\" migration policies."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-politics-63489276?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-politics-63489276",
+          "pubDate": "Thu, 03 Nov 2022 10:08:42 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Man jailed after cocaine almost killed baby in Perthshire"
+          },
+          "description": {
+            "__cdata": "The 30-year-old admitted endangering the life of the baby boy he was supposed to be looking after."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-scotland-tayside-central-63470991?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-scotland-tayside-central-63470991",
+          "pubDate": "Thu, 03 Nov 2022 10:37:53 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Tory MP Andrew Bridgen facing suspension from Commons"
+          },
+          "description": {
+            "__cdata": "The standards committee found he had breached lobbying rules and questioned the watchdog's integrity."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-politics-63498136?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-politics-63498136",
+          "pubDate": "Thu, 03 Nov 2022 11:49:50 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Bounty bars removed from Celebrations tubs in trial"
+          },
+          "description": {
+            "__cdata": "Mars Wrigley is removing the treat from some tubs after finding 40% of people hate the coconut-filled sweet."
+          },
+          "link": "https://www.bbc.co.uk/news/business-63497187?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-63497187",
+          "pubDate": "Thu, 03 Nov 2022 12:18:17 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "How much could your mortgage rise? Try our calculator"
+          },
+          "description": {
+            "__cdata": "Use our calculator to find out how much mortgage payments could go up for your household."
+          },
+          "link": "https://www.bbc.co.uk/news/business-63474582?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-63474582",
+          "pubDate": "Thu, 03 Nov 2022 10:47:39 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cost of living: The homebuyers anxious about their mortgages"
+          },
+          "description": {
+            "__cdata": "Three people from Derby tell BBC News how they will be affected by the Bank of England base rate hike."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-derbyshire-63470931?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-derbyshire-63470931",
+          "pubDate": "Thu, 03 Nov 2022 01:17:54 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "What are interest rates? A quick guide"
+          },
+          "description": {
+            "__cdata": "Why interest rates are so important - especially when they change."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-63460591?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-63460591",
+          "pubDate": "Thu, 03 Nov 2022 11:30:26 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "'We can't afford to give away Christmas cake this year'"
+          },
+          "description": {
+            "__cdata": "As food price inflation soars, front-line charities say they may have to cut down on vital services."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-63491029?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-63491029",
+          "pubDate": "Thu, 03 Nov 2022 01:25:21 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "House prices: What happens when they fall?"
+          },
+          "description": {
+            "__cdata": "How could rising interest rates affect the housing market around the UK?"
+          },
+          "link": "https://www.bbc.co.uk/news/explainers-63147101?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/explainers-63147101",
+          "pubDate": "Thu, 03 Nov 2022 12:07:34 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cost of living: Families on balancing rising costs and children's exercise"
+          },
+          "description": {
+            "__cdata": "BBC Sport visits the Mansfield School of Boxing to hear about the choices some are making because of the rising living costs."
+          },
+          "link": "https://www.bbc.co.uk/sport/63461093?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/63461093",
+          "pubDate": "Thu, 03 Nov 2022 09:33:46 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Why does the Bank of England change interest rates?"
+          },
+          "description": {
+            "__cdata": "The Bank of England is increasing its key interest rate to help curb inflation."
+          },
+          "link": "https://www.bbc.co.uk/news/business-50837114?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-50837114",
+          "pubDate": "Thu, 03 Nov 2022 12:02:00 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "National Living Wage: The truth about food courier pay"
+          },
+          "description": {
+            "__cdata": "A new BBC documentary looks into what it takes for food couriers to make money during an evening shift."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-63391400?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-63391400",
+          "pubDate": "Fri, 28 Oct 2022 05:25:40 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "BBC Food's vegetarian family £1 recipe meal plan"
+          },
+          "description": {
+            "__cdata": "This budget-friendly veggie meal plan covers a week's worth of dinners for four adults, coming in at under £28 in total."
+          },
+          "link": "https://www.bbc.co.uk/food/articles/budget_vegetarian_family_meal_plan_for_four?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/food/articles/budget_vegetarian_family_meal_plan_for_four",
+          "pubDate": "Wed, 19 Oct 2022 16:44:02 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cost of Living: Your money-saving tips for Christmas"
+          },
+          "description": {
+            "__cdata": "With vanishingly few paydays until Christmas, readers tell us how they're cutting down on festive spending."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-63442992?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-63442992",
+          "pubDate": "Tue, 01 Nov 2022 07:39:46 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "What is the UK inflation rate and why is the cost of living rising?"
+          },
+          "description": {
+            "__cdata": "The price of the things we spend our money on is again rising at its highest rate in 40 years."
+          },
+          "link": "https://www.bbc.co.uk/news/business-12196322?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-12196322",
+          "pubDate": "Tue, 25 Oct 2022 09:55:40 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cost of living: Swansea estate cuts bills by generating energy"
+          },
+          "description": {
+            "__cdata": "People on a Swansea estate are reducing bills by sharing solar panels and storing the power."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-wales-63300680?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-wales-63300680",
+          "pubDate": "Mon, 31 Oct 2022 14:34:47 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Why is there a global energy crisis and who might suffer most from it?"
+          },
+          "description": {
+            "__cdata": "Russia's invasion of Ukraine has led to soaring energy prices, threatening supply to the world's poorest."
+          },
+          "link": "https://www.bbc.co.uk/news/world-63430824?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-63430824",
+          "pubDate": "Sun, 30 Oct 2022 01:05:20 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "BBC Food's family £1 recipe meal plan"
+          },
+          "description": {
+            "__cdata": "This budget-friendly meal plan covers a week's worth of dinners for four adults, coming in at under £28 in total."
+          },
+          "link": "https://www.bbc.co.uk/food/articles/budget_family_meal_plan_for_four#xtor=CS8-1000-%5BEditorialPromo_Box%5D-%5BNewsEditorial_Promo%5D-%5BNewsEditorial_Promo%5D-%5BPS_FOOD~N~~P_budget_meal_plannerFP%5D",
+          "guid": "https://www.bbc.co.uk/food/articles/budget_family_meal_plan_for_four#xtor=CS8-1000-%5BEditorialPromo_Box%5D-%5BNewsEditorial_Promo%5D-%5BNewsEditorial_Promo%5D-%5BPS_FOOD~N~~P_budget_meal_plannerFP%5D",
+          "pubDate": "Tue, 18 Oct 2022 11:42:16 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Which countries are doing the most to tackle energy bills?"
+          },
+          "description": {
+            "__cdata": "European countries have taken different approaches to higher energy bills."
+          },
+          "link": "https://www.bbc.co.uk/news/61522123?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/61522123",
+          "pubDate": "Fri, 07 Oct 2022 14:11:45 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "BBC experts on six things you can do as cost of living rises"
+          },
+          "description": {
+            "__cdata": "BBC correspondents share some things that could help you cope with rising prices."
+          },
+          "link": "https://www.bbc.co.uk/news/business-63284645?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-63284645",
+          "pubDate": "Tue, 18 Oct 2022 21:48:21 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "How to cut your energy bills"
+          },
+          "description": {
+            "__cdata": "Energy bills have gone up, but there are some easy ways households can reduce costs."
+          },
+          "link": "https://www.bbc.co.uk/news/business-62738249?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/business-62738249",
+          "pubDate": "Thu, 20 Oct 2022 11:48:32 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Cost of living: How can I save money on my food shop?"
+          },
+          "description": {
+            "__cdata": "The cost-of-living crisis continues to bite. Here are some things that can reduce the impact."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-61798003?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-61798003",
+          "pubDate": "Tue, 05 Jul 2022 12:40:51 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "North Korea: Kim Jong-un wants America's attention"
+          },
+          "description": {
+            "__cdata": "A nuclear test could be next but the ultimate goal of this latest salvo is to bring the US to the table."
+          },
+          "link": "https://www.bbc.co.uk/news/world-asia-63494752?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-asia-63494752",
+          "pubDate": "Thu, 03 Nov 2022 03:34:09 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "The UK's most-streamed songs of 1952 to 2022 revealed"
+          },
+          "description": {
+            "__cdata": "From Gene Kelly to Harry Styles, BBC Radio 1 and 2 reveal the biggest songs of the last 70 years."
+          },
+          "link": "https://www.bbc.co.uk/news/entertainment-arts-63490691?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/entertainment-arts-63490691",
+          "pubDate": "Thu, 03 Nov 2022 04:16:47 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Can the US live in Xi Jinping's world?"
+          },
+          "description": {
+            "__cdata": "Mr Xi's vision is in stark contrast to what the West had hoped for from decades of trade and engagement."
+          },
+          "link": "https://www.bbc.co.uk/news/world-asia-china-63386954?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-asia-china-63386954",
+          "pubDate": "Thu, 03 Nov 2022 00:00:10 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "The Papers: Migrants 'abandoned' and Bank set for interest rise"
+          },
+          "description": {
+            "__cdata": "Some papers cover a group of migrants mistakenly left stranded in central London without accommodation."
+          },
+          "link": "https://www.bbc.co.uk/news/blogs-the-papers-63494321?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/blogs-the-papers-63494321",
+          "pubDate": "Thu, 03 Nov 2022 05:50:50 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "COP27: What have global leaders done on climate change in 2022?"
+          },
+          "description": {
+            "__cdata": "With COP27 about to get under way, which nations have taken a lead and which have fallen behind since the last UN climate summit?"
+          },
+          "link": "https://www.bbc.co.uk/news/science-environment-63458945?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/science-environment-63458945",
+          "pubDate": "Thu, 03 Nov 2022 00:03:18 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Premium bonds: The unclaimed £68m in NS&I prizes"
+          },
+          "description": {
+            "__cdata": "There are two million prizes in total and three belong to winners in England yet to claim £100k windfalls."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-63430884?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-63430884",
+          "pubDate": "Thu, 03 Nov 2022 02:08:16 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Iran protests: The dance video I dared not share"
+          },
+          "description": {
+            "__cdata": "Dancer Sarina was banned from performing but is now sharing her work in solidarity with protesting women."
+          },
+          "link": "https://www.bbc.co.uk/news/world-middle-east-63486897?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-middle-east-63486897",
+          "pubDate": "Wed, 02 Nov 2022 23:46:12 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "China Covid: Panic and fear drove iPhone factory breakout"
+          },
+          "description": {
+            "__cdata": "Workers at the plant in Zhengzhou, China, thought they were going to be part of a huge Covid experiment."
+          },
+          "link": "https://www.bbc.co.uk/news/world-asia-china-63481793?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-asia-china-63481793",
+          "pubDate": "Thu, 03 Nov 2022 00:05:35 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Youngest person to use prosthetic legs with computerised knees"
+          },
+          "description": {
+            "__cdata": "Harmonie-Rose has been training with an assistance dog to help her do tasks."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-bristol-63486321?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-bristol-63486321",
+          "pubDate": "Wed, 02 Nov 2022 16:44:32 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "'My dad, the claw hair clip inventor'"
+          },
+          "description": {
+            "__cdata": "BBC journalist Anne-Marie Dias Borges tells how her foster father invented the iconic claw hair clip."
+          },
+          "link": "https://www.bbc.co.uk/news/world-africa-63401869?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-africa-63401869",
+          "pubDate": "Wed, 02 Nov 2022 07:05:05 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Now we'll vote to make him eat bugs - Hancock's constituents"
+          },
+          "description": {
+            "__cdata": "Constituents react to their MP, ex-Health Secretary Matt Hancock, joining ITV's I'm A Celebrity."
+          },
+          "link": "https://www.bbc.co.uk/news/uk-england-suffolk-63472625?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/uk-england-suffolk-63472625",
+          "pubDate": "Wed, 02 Nov 2022 11:43:21 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Haaland not Halland! Why fans' typos are aggravating Sweden"
+          },
+          "description": {
+            "__cdata": "The director of Visit Halland says the region's hashtag is now filled with photos of the footballer."
+          },
+          "link": "https://www.bbc.co.uk/news/technology-63483695?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/technology-63483695",
+          "pubDate": "Wed, 02 Nov 2022 11:30:26 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Shirley Manson: 'Garbage got it in the neck from everyone'"
+          },
+          "description": {
+            "__cdata": "The singer reflects on how the band survived 30 years, and tells the stories behind their best songs."
+          },
+          "link": "https://www.bbc.co.uk/news/entertainment-arts-63463129?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/entertainment-arts-63463129",
+          "pubDate": "Wed, 02 Nov 2022 00:06:28 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Ukraine war: Russia's uncertain future a product of its past"
+          },
+          "description": {
+            "__cdata": "Russia's invasion of Ukraine is making its future uncertain - but so too is its authoritarian past."
+          },
+          "link": "https://www.bbc.co.uk/news/world-europe-63471505?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-europe-63471505",
+          "pubDate": "Wed, 02 Nov 2022 05:32:30 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Ben Chilwell: Chelsea left-back an England doubt for World Cup after hamstring injury"
+          },
+          "description": {
+            "__cdata": "England left-back Ben Chilwell is a doubt for the World Cup after suffering a hamstring injury in Chelsea's Champions League win against Dinamo Zagreb."
+          },
+          "link": "https://www.bbc.co.uk/sport/football/63494358?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/football/63494358",
+          "pubDate": "Thu, 03 Nov 2022 08:14:35 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Rugby World Cup: England centre Tatyana Heard's journey from supermarket to semi-final"
+          },
+          "description": {
+            "__cdata": "Three years ago Tatyana Heard started working at her local supermarket. Now the England centre is on the brink of a World Cup final."
+          },
+          "link": "https://www.bbc.co.uk/sport/rugby-union/63481755?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/rugby-union/63481755",
+          "pubDate": "Thu, 03 Nov 2022 06:53:17 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "T20 World Cup: Iftikhar Ahmed hits biggest six of the tournament"
+          },
+          "description": {
+            "__cdata": "Watch as Pakistan's Iftikhar Ahmed hits the biggest six of the tournament so far, launching a Lungi Ngidi delivery 106m into the stands at the T20 World Cup in Sydney."
+          },
+          "link": "https://www.bbc.co.uk/sport/av/cricket/63497175?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/av/cricket/63497175",
+          "pubDate": "Thu, 03 Nov 2022 09:41:28 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Australia 57-53 England: Roses lose series 3-0 thanks to final-Test defeat"
+          },
+          "description": {
+            "__cdata": "England are beaten 57-53 by Australia in the final match as they lose their series against the Diamonds 3-0."
+          },
+          "link": "https://www.bbc.co.uk/sport/netball/63495942?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/netball/63495942",
+          "pubDate": "Thu, 03 Nov 2022 10:27:19 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Rico Lewis: Pep Guardiola hails 'dream' Manchester City teenager"
+          },
+          "description": {
+            "__cdata": "Pep Guardiola hails 17-year-old Rico Lewis' Champions League night to remember and says Manchester City \"know he has quality\"."
+          },
+          "link": "https://www.bbc.co.uk/sport/football/63490166?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/football/63490166",
+          "pubDate": "Wed, 02 Nov 2022 23:47:51 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "Rugby League World Cup: England captain Tom Halliwell targets home success"
+          },
+          "description": {
+            "__cdata": "England wheelchair rugby league captain Tom Halliwell believes the World Cup gives the sport a huge chance on the big stage."
+          },
+          "link": "https://www.bbc.co.uk/sport/rugby-league/63491457?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/sport/rugby-league/63491457",
+          "pubDate": "Thu, 03 Nov 2022 06:18:35 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "US midterms: How Gen Z and TikTok could influence election"
+          },
+          "description": {
+            "__cdata": "Young voters turned out in big numbers in 2020. Will they show up again to impact the midterms?"
+          },
+          "link": "https://www.bbc.co.uk/news/world-us-canada-63435544?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-us-canada-63435544",
+          "pubDate": "Thu, 03 Nov 2022 00:32:51 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "What are the US midterms? A simple guide"
+          },
+          "description": {
+            "__cdata": "The US holds midterm elections on 8 November, but who's in the running and what could the results mean?"
+          },
+          "link": "https://www.bbc.co.uk/news/world-us-canada-61274333?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-us-canada-61274333",
+          "pubDate": "Fri, 14 Oct 2022 10:42:05 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "US midterm elections: Why five states have slavery on the ballot in 2022"
+          },
+          "description": {
+            "__cdata": "The 1865 US slavery ban doesn't cover everyone. Voters will decide whether to keep the exemptions."
+          },
+          "link": "https://www.bbc.co.uk/news/world-us-canada-63338784?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-us-canada-63338784",
+          "pubDate": "Thu, 03 Nov 2022 09:18:38 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "US midterm elections: Why are they so important?"
+          },
+          "description": {
+            "__cdata": "Americans will be reshaping Congress but the impact of this vote will be far-reaching. Here's why."
+          },
+          "link": "https://www.bbc.co.uk/news/world-us-canada-63139993?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/world-us-canada-63139993",
+          "pubDate": "Mon, 31 Oct 2022 17:30:36 GMT"
+        },
+        {
+          "title": {
+            "__cdata": "US midterm elections: Abortion will decide how I vote - here's why"
+          },
+          "description": {
+            "__cdata": "Paxton and Melanie have very different views on whether abortion should be banned or protected in the US."
+          },
+          "link": "https://www.bbc.co.uk/news/63435169?at_medium=RSS&amp;at_campaign=KARANGA",
+          "guid": "https://www.bbc.co.uk/news/63435169",
+          "pubDate": "Tue, 01 Nov 2022 22:39:06 GMT"
+        }
+      ]
+    }
+  }
+}

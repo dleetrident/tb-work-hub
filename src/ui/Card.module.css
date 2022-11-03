@@ -5,12 +5,19 @@
   -o-background-size: cover;
   background-size: 100% 100%;
   margin: 5% auto;
-  width: 50%;
+  width: 80%;
   height: 80%;
   z-index: 9999;
 }
 
 .cardheader {
   font-size: 1em;
-  margin-top: 1em;
+  margin-top: 0;
+  height: 20%;
+  margin-bottom: 0;
+  padding-top: 5%;
+}
+
+.cardcontent {
+  position: relative;
 }

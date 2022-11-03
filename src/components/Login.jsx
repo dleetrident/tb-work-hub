@@ -1,5 +1,6 @@
 import { useRef, useContext, useState } from "react";
 import AuthContext from "../store/auth-context";
+import { Link } from "react-router-dom";
 import classes from "./Login.module.css";
 import button from "../Assets/Login_button.png";
 
@@ -51,14 +52,16 @@ const Login = () => {
             ref={passwordRef}
             placeholder="Password"></input>
         </div>
+        <Link to="/mainhub" style={{ textDecoration: "none", color: "black" }}>
+          <input
+            className={classes.button}
+            type="image"
+            id="myimage"
+            src={button}
+            alt="Login Button"
+          />
+        </Link>
 
-        <input
-          className={classes.button}
-          type="image"
-          id="myimage"
-          src={button}
-          alt="Login Button"
-        />
         <br />
         {formIsInvalid ? (
           <p className={classes["form-error"]}>

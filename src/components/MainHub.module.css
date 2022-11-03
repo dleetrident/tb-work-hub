@@ -3,9 +3,24 @@
   align-content: center;
   align-self: center;
   text-align: center;
-  height: 75vh;
+  height: 40rem;
+  width: 80vw;
 }
 
 .gridcontainer {
-  height: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .gridcontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  .gridcontainer {
+    grid-template-columns: 1fr;
+  }
 }
