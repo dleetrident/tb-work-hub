@@ -15,12 +15,14 @@
 
 @media (max-width: 800px) {
   .gridcontainer {
+    height: 135%;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .gridcontainer {
+    height: 200%;
     grid-template-columns: 1fr;
   }
 }

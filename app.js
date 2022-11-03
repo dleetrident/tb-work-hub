@@ -17,18 +17,9 @@ if (process.env.NODE_ENV === "production") {
     req.sendFile(path.resolve(__dirname, "build", "index.html"));
   });
 }
-// XML
+// CSV
 
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
-// app.use(xmlparser());
-
-// app.post("http://feeds.bbci.co.uk/news/rss.xml", function (req, res, next) {
-//   // req.body contains the parsed xml
-//   console.log(req.body);
-// });
-
-// XML
+// CSV
 
 app.listen(PORT, (err) => {
   if (err) {

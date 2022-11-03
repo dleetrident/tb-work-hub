@@ -11,6 +11,7 @@ import { useContext, useEffect, useState } from "react";
 import AuthContext from "./store/auth-context";
 import Test from "./components/Test";
 import News from "./components/hubpages/News";
+import Sports from "./components/hubpages/Sports";
 
 function App() {
   const authCtx = useContext(AuthContext);
@@ -22,6 +23,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/mainhub" element={<MainHub />} />
       <Route path="/news" element={<News />} />
+      <Route path="/sports" element={<Sports />} />
     </Routes>
   );
 }
