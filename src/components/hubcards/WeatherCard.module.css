@@ -21,14 +21,20 @@
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 720px) {
+  .icon {
+    width: 30%;
+  }
   .temp {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
+  .icon {
+    width: 25%;
+  }
   .temp {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 }

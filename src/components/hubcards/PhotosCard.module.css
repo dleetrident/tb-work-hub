@@ -1,0 +1,28 @@
+.gridcontainer {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+}
+
+.imgdiv {
+  background-image: url(../../Assets/PhotoBG.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 60px;
+  margin: 5% auto;
+  padding: auto;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  height: 90%;
+  width: 90%;
+  margin: auto auto;
+  display: block;
+  position: relative;
+}

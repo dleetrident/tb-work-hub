@@ -6,6 +6,9 @@ import classes from "./MainHub.module.css";
 import { Link } from "react-router-dom";
 import NewsCard from "./hubcards/NewsCard";
 import SportsCard from "./hubcards/SportsCard";
+import PhotosCard from "./hubcards/PhotosCard";
+import TasksCard from "./hubcards/TasksCard";
+import ClothesCard from "./hubcards/ClothesCard";
 
 const MainHub = () => {
   const authCtx = useContext(AuthContext);
@@ -21,12 +24,17 @@ const MainHub = () => {
           <NewsCard cardHeader="News" id="news" />
         </Link>
         <Link to="/sports" style={{ textDecoration: "none", color: "black" }}>
-          <SportsCard id="sport" />
+          <SportsCard id="sports" />
         </Link>
-
-        <Card cardHeader="Photos" id="photos" />
-        <Card cardHeader="Tasks" id="tasks" />
-        <Card cardHeader="Clothes" id="clothes" />
+        <Link to="/photos" style={{ textDecoration: "none", color: "black" }}>
+          <PhotosCard id="photos" />
+        </Link>
+        <Link to="/tasks" style={{ textDecoration: "none", color: "black" }}>
+          <TasksCard id="tasks" />
+        </Link>
+        <Link to="/clothes" style={{ textDecoration: "none", color: "black" }}>
+          <ClothesCard id="clothes" />
+        </Link>
       </div>
     </div>
   );

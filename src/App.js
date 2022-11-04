@@ -12,6 +12,9 @@ import AuthContext from "./store/auth-context";
 import Test from "./components/Test";
 import News from "./components/hubpages/News";
 import Sports from "./components/hubpages/Sports";
+import Photos from "./components/hubpages/Photos";
+import Tasks from "./components/hubpages/Tasks";
+import Clothes from "./components/hubpages/Clothes";
 
 function App() {
   const authCtx = useContext(AuthContext);
@@ -24,6 +27,9 @@ function App() {
       <Route path="/mainhub" element={<MainHub />} />
       <Route path="/news" element={<News />} />
       <Route path="/sports" element={<Sports />} />
+      <Route path="/photos" element={<Photos />} />
+      <Route path="/tasks" element={<Tasks />} />
+      <Route path="/clothes" element={<Clothes />} />
     </Routes>
   );
 }
