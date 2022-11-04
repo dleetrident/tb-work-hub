@@ -3,7 +3,7 @@ import useGetNews from "../../hooks/useGetNews";
 import Card from "../../ui/Card";
 import classes from "./PhotosCard.module.css";
 import { storage } from "../../firebase";
-import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
+import { ref, listAll, getDownloadURL } from "firebase/storage";
 const PhotosCard = (props) => {
   const [fileList, setFileList] = useState([]);
   const imageListRef = ref(storage, "image/");
