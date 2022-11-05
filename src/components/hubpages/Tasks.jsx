@@ -1,14 +1,13 @@
 import { useContext, useEffect } from "react";
 import { useState } from "react";
 import Page from "../../ui/Page";
-import classes from "./News.module.css";
-import useGetNews from "../../hooks/useGetNews";
+import classes from "./Tasks.module.css";
 import PlusImgSmall from "../../Assets/PlusImgSmall.png";
 import TaskContext from "../../store/task-context";
 
 const Tasks = () => {
   const taskCtx = useContext(TaskContext);
-  const { taskList, addTask } = taskCtx;
+  const { taskList, addTask, amendTask, updateTick, sendTasks } = taskCtx;
 
   const handleAddTask = () => {
     const taskObj = { name: "Task", checked: false, id: Math.random() };
@@ -16,33 +15,52 @@ const Tasks = () => {
   };
 
   const handleNameChange = (event) => {
-    const nameChanger = taskList.find((task) => {
-      return task.id === event.target.id;
-    });
-    console.log(nameChanger);
+    const name = event.target.value;
+    const id = event.target.id;
+
+    amendTask(name, id);
+
+    console.log();
   };
-  const checkboxChangeHandler = (event) => {
-    console.log(event);
+  const handleCheckboxChange = (event) => {
+    updateTick(event.target.id);
+    console.log(taskList);
   };
+
+  useEffect(() => {
+    const tasks = localStorage.getItem("tasks");
+    const type = typeof tasks;
+    console.log(type);
+    if (type === "string") {
+      sendTasks(JSON.parse(tasks));
+    }
+  }, []);
 
   return (
     <Page heading="Tasks">
-      {taskCtx.taskList.map((task) => {
-        return (
-          <div key={task.id} id={task.id}>
-            <input
-              type="text"
-              onChange={handleNameChange}
-              id={task.id}
-              placeholder={task.name}></input>
-            <input
-              type="checkbox"
-              onChange={checkboxChangeHandler}
-              id={task.id}
-            />
-          </div>
-        );
-      })}
+      {taskCtx.taskList.length > 0 &&
+        taskCtx.taskList.map((task, index) => {
+          return (
+            <div key={task.id} id={task.id} className={classes.inputdiv}>
+              <input
+                className={classes.textinput}
+                type="text"
+                onChange={handleNameChange}
+                id={task.id}
+                placeholder={
+                  task.name === "Task" ? `${task.name} ${index + 1}` : task.name
+                }></input>
+              <input
+                className={`${classes.checkinput} ${
+                  task.checked === true && classes.tick
+                }`}
+                type="checkbox"
+                onChange={handleCheckboxChange}
+                id={task.id}
+              />
+            </div>
+          );
+        })}
       <img
         className={classes.photo}
         src={PlusImgSmall}

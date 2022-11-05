@@ -12,7 +12,6 @@ const PhotosCard = (props) => {
     listAll(imageListRef).then((response) => {
       response.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
-          console.log(url);
           setFileList((prevValue) => [...prevValue, url].sort());
         });
       });

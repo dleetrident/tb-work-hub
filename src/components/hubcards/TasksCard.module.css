@@ -1,0 +1,66 @@
+.container {
+  margin-top: 2rem;
+}
+
+.textinput::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.textinput {
+  color: white;
+  opacity: 1;
+  background-color: transparent;
+  border-width: 0 0 3px 0;
+  border-color: white;
+  width: 50%;
+  height: 1rem;
+  font-size: 1rem;
+}
+
+.textinput:focus {
+  outline: none;
+}
+
+.inputdiv {
+  margin-bottom: 1rem;
+}
+
+.checkinput {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0 0 0 2em;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid yellow;
+  border-radius: 12%;
+  transform: translateY(0.8em);
+}
+
+.tick::before {
+  position: absolute;
+
+  top: 50%;
+  height: 50%;
+  width: 1.5px;
+  background-color: slategray;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.tick::after {
+  position: absolute;
+
+  bottom: 0;
+  height: 1.5px;
+  width: 150%;
+  background-color: slategray;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}

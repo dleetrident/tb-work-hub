@@ -1,0 +1,86 @@
+.textinput::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.textinput {
+  color: white;
+  opacity: 1;
+  background-color: transparent;
+  border-width: 0 0 3px 0;
+  border-color: white;
+  width: 50%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.textinput:focus {
+  outline: none;
+}
+
+.inputdiv {
+  margin-bottom: 2rem;
+}
+
+.checkinput {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0 0 0 2em;
+
+  font: inherit;
+  color: currentColor;
+  width: 3em;
+  height: 3em;
+  border: 0.15em solid yellow;
+  border-radius: 12%;
+  transform: translateY(0.8em);
+}
+
+.tick::before {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  height: 50%;
+  width: 3px;
+  background-color: slategray;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.tick::after {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  height: 3px;
+  width: 150%;
+  background-color: slategray;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.photo {
+  position: absolute;
+  left: 22%;
+  width: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .photo {
+    left: 21%;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo {
+    left: 19%;
+  }
+}
+
+@media (max-width: 500px) {
+  .photo {
+    left: 17%;
+  }
+}

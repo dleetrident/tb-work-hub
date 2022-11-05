@@ -35,7 +35,6 @@ const WeatherCard = (props) => {
         lat: position.coords.latitude,
         long: position.coords.longitude,
       });
-      console.log(loc.lat, loc.long);
     });
     fetchHeroes();
   }, [loc.lat, loc.long]);
