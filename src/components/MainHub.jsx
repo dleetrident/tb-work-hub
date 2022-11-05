@@ -17,9 +17,7 @@ const MainHub = () => {
     <div className={classes.container}>
       <h1>{`Good Day ${authCtx.userName}`}</h1>
       <div className={classes.gridcontainer}>
-        <WeatherCard>
-          <p>test content</p>
-        </WeatherCard>
+        <WeatherCard></WeatherCard>
         <Link to="/news" style={{ textDecoration: "none", color: "black" }}>
           <NewsCard cardHeader="News" id="news" />
         </Link>
@@ -32,9 +30,8 @@ const MainHub = () => {
         <Link to="/tasks" style={{ textDecoration: "none", color: "black" }}>
           <TasksCard id="tasks" />
         </Link>
-        <Link to="/clothes" style={{ textDecoration: "none", color: "black" }}>
-          <ClothesCard id="clothes" />
-        </Link>
+
+        <ClothesCard id="clothes" />
       </div>
     </div>
   );
