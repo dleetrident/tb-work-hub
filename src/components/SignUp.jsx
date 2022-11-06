@@ -49,7 +49,9 @@ const SignUp = () => {
           authCtx.login(userNameRef.current.value);
         });
 
-      navigate("/");
+      setTimeout(() => {
+        !error && navigate("/");
+      }, 500);
     } catch {
       setError("Failed to create an account");
     }
