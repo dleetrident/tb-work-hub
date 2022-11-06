@@ -22,10 +22,7 @@ const ClothesCard = (props) => {
         );
         const data = await response.json();
         const sendClothes = data;
-        console.log(sendClothes[0].clothe);
-        //   Object.entries(data).map((entry) => ({
-        //   [entry[0]]: entry[1],
-        // }));
+  
         setClothes(sendClothes);
       } catch (error) {
         alert(error);

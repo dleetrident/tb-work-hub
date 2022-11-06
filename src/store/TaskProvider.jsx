@@ -57,9 +57,7 @@ const TaskProvider = (props) => {
   const addHandler = (task) => {
     dispatchTaskAction({ type: "ADD", task: task, authCtx: authCtx });
   };
-  const removeHandler = (id) => {
-    dispatchTaskAction({ type: "REMOVE", id: id, authCtx: authCtx });
-  };
+
   const amendHandler = (name, id) => {
     dispatchTaskAction({ type: "AMEND", name: name, id: id, authCtx: authCtx });
   };

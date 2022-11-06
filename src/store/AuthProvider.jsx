@@ -45,9 +45,7 @@ const AuthProvider = (props) => {
 
     console.log(auth.currentUser.displayName);
   };
-  const logoutHandler = () => {
-    dispatchAuthAction({ type: "LOGOUT" });
-  };
+
   const signUp = (email, password) => {
     return auth.createUserWithEmailAndPassword(email, password);
   };
