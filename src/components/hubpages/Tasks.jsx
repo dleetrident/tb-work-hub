@@ -4,9 +4,12 @@ import Page from "../../ui/Page";
 import classes from "./Tasks.module.css";
 import PlusImgSmall from "../../Assets/PlusImgSmall.png";
 import TaskContext from "../../store/task-context";
+import { auth } from "../../firebase";
+import AuthContext from "../../store/auth-context";
 
 const Tasks = () => {
   const taskCtx = useContext(TaskContext);
+  const authCtx = useContext(AuthContext);
   const { taskList, addTask, amendTask, updateTick, sendTasks } = taskCtx;
 
   const handleAddTask = () => {
@@ -28,9 +31,9 @@ const Tasks = () => {
   };
 
   useEffect(() => {
-    const tasks = localStorage.getItem("tasks");
+    const tasks = localStorage.getItem(authCtx.userName);
+    console.log(authCtx.userName);
     const type = typeof tasks;
-    console.log(type);
     if (type === "string") {
       sendTasks(JSON.parse(tasks));
     }

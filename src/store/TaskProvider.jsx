@@ -1,5 +1,8 @@
 import TaskContext from "./task-context";
 import { useReducer } from "react";
+import { auth } from "../firebase";
+import AuthContext from "./auth-context";
+import { useContext } from "react";
 
 const defaultTaskState = {
   taskList: [{ name: "Task", checked: false, id: Math.random() }],
@@ -12,7 +15,7 @@ const taskReducer = (state, action) => {
   }
   if (action.type === "ADD") {
     let updatedList = [...list, action.task];
-    localStorage.setItem("tasks", JSON.stringify(updatedList));
+    localStorage.setItem(action.authCtx.userName, JSON.stringify(updatedList));
     return { taskList: updatedList };
   }
   if (action.type === "AMEND") {
@@ -24,7 +27,7 @@ const taskReducer = (state, action) => {
         return task;
       }
     });
-    localStorage.setItem("tasks", JSON.stringify(list));
+    localStorage.setItem(action.authCtx.userName, JSON.stringify(list));
     return {
       taskList: list,
     };
@@ -35,7 +38,8 @@ const taskReducer = (state, action) => {
         return (task.checked = !task.checked);
       }
     });
-    localStorage.setItem("tasks", JSON.stringify(list));
+    console.log(action.authCtx.userName);
+    localStorage.setItem(action.authCtx.userName, JSON.stringify(list));
     return {
       taskList: list,
     };
@@ -45,25 +49,27 @@ const taskReducer = (state, action) => {
 };
 
 const TaskProvider = (props) => {
+  const authCtx = useContext(AuthContext);
   const [taskState, dispatchTaskAction] = useReducer(
     taskReducer,
     defaultTaskState
   );
   const addHandler = (task) => {
-    dispatchTaskAction({ type: "ADD", task: task });
+    dispatchTaskAction({ type: "ADD", task: task, authCtx: authCtx });
   };
   const removeHandler = (id) => {
-    dispatchTaskAction({ type: "REMOVE", id: id });
+    dispatchTaskAction({ type: "REMOVE", id: id, authCtx: authCtx });
   };
   const amendHandler = (name, id) => {
-    dispatchTaskAction({ type: "AMEND", name: name, id: id });
+    dispatchTaskAction({ type: "AMEND", name: name, id: id, authCtx: authCtx });
   };
   const tickHandler = (id) => {
-    dispatchTaskAction({ type: "TICK", id: id });
+    console.log(authCtx);
+    dispatchTaskAction({ type: "TICK", id: id, authCtx: authCtx });
   };
   const sendHandler = (tasks) => {
     console.log(tasks);
-    dispatchTaskAction({ type: "SEND", tasks: tasks });
+    dispatchTaskAction({ type: "SEND", tasks: tasks, authCtx: authCtx });
   };
   const taskContext = {
     taskList: taskState.taskList,

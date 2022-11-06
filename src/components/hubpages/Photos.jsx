@@ -4,7 +4,7 @@ import Page from "../../ui/Page";
 import classes from "./Photos.module.css";
 import useGetNews from "../../hooks/useGetNews";
 import PlusImg from "../../Assets/PlusImg.png";
-import { storage } from "../../firebase";
+import { auth, storage } from "../../firebase";
 import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 
@@ -13,7 +13,7 @@ const Photos = () => {
   const [fileList, setFileList] = useState([]);
   const [uploaded, setUploaded] = useState(0);
 
-  const imageListRef = ref(storage, "image/");
+  const imageListRef = ref(storage, `image/${auth.currentUser.email}`);
 
   const changeHandler = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -21,13 +21,15 @@ const Photos = () => {
 
   useEffect(() => {
     if (selectedFile !== null) {
-      const imageRef = ref(storage, `image/${selectedFile.name + v4()}`);
+      const imageRef = ref(
+        storage,
+        `image/${auth.currentUser.email}/${selectedFile.name + v4()}`
+      );
       uploadBytes(imageRef, selectedFile).then(() => {
         setUploaded(uploaded + 1);
       });
     }
   }, [selectedFile]);
-  const uploadImage = (e) => {};
 
   useEffect(() => {
     setFileList([]);

@@ -1,12 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useGetNews from "../../hooks/useGetNews";
 import Card from "../../ui/Card";
 import classes from "./PhotosCard.module.css";
-import { storage } from "../../firebase";
+import { auth, storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
+import AuthContext from "../../store/auth-context";
 const PhotosCard = (props) => {
+  const authCtx = useContext(AuthContext);
   const [fileList, setFileList] = useState([]);
-  const imageListRef = ref(storage, "image/");
+  const imageListRef = ref(
+    storage,
+    `image/${auth.currentUser.email && auth.currentUser.email}`
+  );
   useEffect(() => {
     setFileList([]);
     listAll(imageListRef).then((response) => {
@@ -16,7 +21,7 @@ const PhotosCard = (props) => {
         });
       });
     });
-  }, []);
+  }, [auth.currentUser, authCtx]);
   return (
     <Card cardHeader="Photos">
       <div className={classes.gridcontainer}>

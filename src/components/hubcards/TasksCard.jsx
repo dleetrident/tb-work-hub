@@ -2,17 +2,20 @@ import Card from "../../ui/Card";
 import classes from "./TasksCard.module.css";
 import TaskContext from "../../store/task-context";
 import { useContext, useEffect } from "react";
+import { auth } from "../../firebase";
+import AuthContext from "../../store/auth-context";
 
 const TasksCard = () => {
   const taskCtx = useContext(TaskContext);
+  const authCtx = useContext(AuthContext);
   console.log(taskCtx.taskList.slice(0, 3));
   useEffect(() => {
-    const tasks = localStorage.getItem("tasks");
+    const tasks = localStorage.getItem(authCtx.userName);
     const type = typeof tasks;
     if (type === "string") {
       taskCtx.sendTasks(JSON.parse(tasks));
     }
-  }, []);
+  }, [authCtx]);
   return (
     <Card cardHeader="Tasks">
       <div className={classes.container}>

@@ -1,5 +1,7 @@
 import AuthContext from "./auth-context";
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
+import { auth } from "../firebase";
+import { useEffect } from "react";
 
 const defaultAuthState = {
   authState: false,
@@ -22,6 +24,12 @@ const authReducer = (state, action) => {
       userName: "",
     };
   }
+  if (action.type === "USER") {
+    return {
+      authState: true,
+      userName: action.user,
+    };
+  }
 
   return defaultAuthState;
 };
@@ -31,23 +39,40 @@ const AuthProvider = (props) => {
     authReducer,
     defaultAuthState
   );
+  const [loading, setLoading] = useState(true);
   const loginHandler = (userName) => {
-    console.log(userName);
     dispatchAuthAction({ type: "LOGIN", userName: userName });
+
+    console.log(auth.currentUser.displayName);
   };
   const logoutHandler = () => {
     dispatchAuthAction({ type: "LOGOUT" });
   };
+  const signUp = (email, password) => {
+    return auth.createUserWithEmailAndPassword(email, password);
+  };
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user !== null) {
+        dispatchAuthAction({ type: "USER", user: user.displayName });
+      }
+
+      setLoading(false);
+    });
+
+    return unsubscribe;
+  }, []);
 
   const authContext = {
     authState: authState.authState,
     userName: authState.userName,
     login: loginHandler,
     logout: logoutHandler,
+    signUp: signUp,
   };
   return (
     <AuthContext.Provider value={authContext}>
-      {props.children}
+      {!loading && props.children}
     </AuthContext.Provider>
   );
 };

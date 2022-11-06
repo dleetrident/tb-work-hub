@@ -9,13 +9,15 @@ import SportsCard from "./hubcards/SportsCard";
 import PhotosCard from "./hubcards/PhotosCard";
 import TasksCard from "./hubcards/TasksCard";
 import ClothesCard from "./hubcards/ClothesCard";
+import AuthProvider from "../store/AuthProvider";
 
 const MainHub = () => {
   const authCtx = useContext(AuthContext);
+  console.log(authCtx);
 
   return (
     <div className={classes.container}>
-      <h1>{`Good Day ${authCtx.userName}`}</h1>
+      <h1>{authCtx.userName && `Good Day ${authCtx.userName}`}</h1>
       <div className={classes.gridcontainer}>
         <WeatherCard></WeatherCard>
         <Link to="/news" style={{ textDecoration: "none", color: "black" }}>

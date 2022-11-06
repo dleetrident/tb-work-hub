@@ -9,13 +9,13 @@ import TaskProvider from "./store/TaskProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <TaskProvider>
-      <AuthProvider>
+  <AuthProvider>
+    <BrowserRouter>
+      <TaskProvider>
         <App />
-      </AuthProvider>
-    </TaskProvider>
-  </BrowserRouter>
+      </TaskProvider>
+    </BrowserRouter>
+  </AuthProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

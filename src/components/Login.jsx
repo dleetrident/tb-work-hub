@@ -3,24 +3,41 @@ import AuthContext from "../store/auth-context";
 import { Link } from "react-router-dom";
 import classes from "./Login.module.css";
 import button from "../Assets/Login_button.png";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../firebase";
 
 const Login = () => {
   const authCtx = useContext(AuthContext);
-  const userNameRef = useRef();
+  const emailRef = useRef();
   const passwordRef = useRef();
   const [formIsInvalid, setFormIsInvalid] = useState(false);
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     if (
-      userNameRef.current.value.length < 5 ||
+      emailRef.current.value.length < 5 ||
       passwordRef.current.value.length < 5
     ) {
       setFormIsInvalid(true);
       return;
     } else {
-      console.log(authCtx.authState);
-      authCtx.login(userNameRef.current.value);
+      try {
+        await auth
+          .signInWithEmailAndPassword(
+            emailRef.current.value,
+            passwordRef.current.value
+          )
+          .then(() => {
+            authCtx.login(auth.currentUser.displayName);
+          });
+        setTimeout(() => {
+          !error && navigate("/");
+        }, 500);
+      } catch {
+        return setError("failed to login");
+      }
     }
   };
 
@@ -29,20 +46,18 @@ const Login = () => {
       <h1>Dev Challenge</h1>
       <form onSubmit={submitHandler}>
         <div className="field">
-          <label className="label" htmlFor="name">
-            {authCtx.userName}
-          </label>
+          <label className="label" htmlFor="email"></label>
           <input
             className="input is-primary"
             type="text"
-            id="username"
+            id="email"
             maxLength="40"
             minLength="6"
-            ref={userNameRef}
-            placeholder="Username"></input>
+            ref={emailRef}
+            placeholder="Email"></input>
         </div>
         <div className="field">
-          <label className="label" htmlFor="name"></label>
+          <label className="label" htmlFor="password"></label>
           <input
             className="input is-primary"
             type="text"
@@ -52,15 +67,15 @@ const Login = () => {
             ref={passwordRef}
             placeholder="Password"></input>
         </div>
-        <Link to="/mainhub" style={{ textDecoration: "none", color: "black" }}>
-          <input
-            className={classes.button}
-            type="image"
-            id="myimage"
-            src={button}
-            alt="Login Button"
-          />
-        </Link>
+
+        <input
+          className={classes.button}
+          type="image"
+          id="myimage"
+          src={button}
+          alt="Login Button"
+          onClick={submitHandler}
+        />
 
         <br />
         {formIsInvalid ? (
@@ -71,7 +86,12 @@ const Login = () => {
         ) : (
           <br />
         )}
+        {error}
       </form>
+      <div>
+        {" "}
+        New to the Hackathon?<Link to="/signup">Sign Up</Link>
+      </div>
     </div>
   );
 };
