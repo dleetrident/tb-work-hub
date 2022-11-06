@@ -18,7 +18,7 @@ const ClothesCard = (props) => {
     const fetchClothes = async () => {
       try {
         const response = await fetch(
-          "https://tb-work-hub.herokuapp.com/clothes"
+          "https://imageupload-28cb9-default-rtdb.europe-west1.firebasedatabase.app/payload.json"
         );
         const data = await response.json();
         const sendClothes = data;
