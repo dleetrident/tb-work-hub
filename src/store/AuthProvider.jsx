@@ -65,7 +65,6 @@ const AuthProvider = (props) => {
     authState: authState.authState,
     userName: authState.userName,
     login: loginHandler,
-    logout: logoutHandler,
     signUp: signUp,
   };
   return (

@@ -29,5 +29,31 @@
 .button {
   height: 10%;
   width: 18%;
-  margin-top: 30%;
+  margin-top: 15%;
+}
+
+.textinput::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.textinput {
+  color: white;
+  opacity: 1;
+  background-color: transparent;
+  border-width: 0 0 3px 0;
+  border-color: white;
+  width: 50%;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 4%;
+}
+
+.textinput:focus {
+  outline: none;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

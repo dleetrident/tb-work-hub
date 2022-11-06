@@ -72,7 +72,6 @@ const TaskProvider = (props) => {
   const taskContext = {
     taskList: taskState.taskList,
     addTask: addHandler,
-    removeTask: removeHandler,
     amendTask: amendHandler,
     updateTick: tickHandler,
     sendTasks: sendHandler,

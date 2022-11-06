@@ -1,6 +1,6 @@
 import { useRef, useContext, useState } from "react";
 import AuthContext from "../store/auth-context";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
 import button from "../Assets/Register_button.png";
 import { auth } from "../firebase";
@@ -63,49 +63,52 @@ const SignUp = () => {
       <h1>Dev Challenge</h1>
 
       <form onSubmit={submitHandler}>
-        <div className="field">
-          <label className="label" htmlFor="name"></label>
-          <input
-            className="input is-primary"
-            type="text"
-            id="username"
-            maxLength="40"
-            minLength="6"
-            ref={userNameRef}
-            placeholder="Username"></input>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="email"></label>
-          <input
-            className="input is-primary"
-            type="email"
-            id="email"
-            maxLength="40"
-            minLength="6"
-            ref={emailRef}
-            placeholder="Email"></input>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="name"></label>
-          <input
-            className="input is-primary"
-            type="text"
-            id="password"
-            maxLength="40"
-            minLength="6"
-            ref={passwordRef}
-            placeholder="Password"></input>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="name"></label>
-          <input
-            className="input is-primary"
-            type="text"
-            id="password"
-            maxLength="40"
-            minLength="6"
-            ref={passwordConfirmRef}
-            placeholder="Password"></input>
+        <div className={classes.gridcontainer}>
+          {" "}
+          <div className="field">
+            <label className="label" htmlFor="name"></label>
+            <input
+              className={classes.textinput}
+              type="text"
+              id="username"
+              maxLength="40"
+              minLength="6"
+              ref={userNameRef}
+              placeholder="Username"></input>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor="email"></label>
+            <input
+              className={classes.textinput}
+              type="email"
+              id="email"
+              maxLength="40"
+              minLength="6"
+              ref={emailRef}
+              placeholder="Email"></input>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor="name"></label>
+            <input
+              className={classes.textinput}
+              type="text"
+              id="password"
+              maxLength="40"
+              minLength="6"
+              ref={passwordRef}
+              placeholder="Password"></input>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor="name"></label>
+            <input
+              className={classes.textinput}
+              type="text"
+              id="password"
+              maxLength="40"
+              minLength="6"
+              ref={passwordConfirmRef}
+              placeholder="Password"></input>
+          </div>
         </div>
 
         <input

@@ -45,27 +45,30 @@ const Login = () => {
     <div className={classes.container}>
       <h1>Dev Challenge</h1>
       <form onSubmit={submitHandler}>
-        <div className="field">
-          <label className="label" htmlFor="email"></label>
-          <input
-            className="input is-primary"
-            type="text"
-            id="email"
-            maxLength="40"
-            minLength="6"
-            ref={emailRef}
-            placeholder="Email"></input>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="password"></label>
-          <input
-            className="input is-primary"
-            type="text"
-            id="password"
-            maxLength="40"
-            minLength="6"
-            ref={passwordRef}
-            placeholder="Password"></input>
+        <div className={classes.gridcontainer}>
+          {" "}
+          <div className="field">
+            <label className="label" htmlFor="email"></label>
+            <input
+              className={classes.textinput}
+              type="text"
+              id="email"
+              maxLength="40"
+              minLength="6"
+              ref={emailRef}
+              placeholder="Email"></input>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor="password"></label>
+            <input
+              className={classes.textinput}
+              type="text"
+              id="password"
+              maxLength="40"
+              minLength="6"
+              ref={passwordRef}
+              placeholder="Password"></input>
+          </div>
         </div>
 
         <input

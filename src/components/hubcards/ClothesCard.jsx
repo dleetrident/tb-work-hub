@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import useGetNews from "../../hooks/useGetNews";
 import Card from "../../ui/Card";
 import classes from "./ClothesCard.module.css";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
@@ -22,7 +21,7 @@ const ClothesCard = (props) => {
         );
         const data = await response.json();
         const sendClothes = data;
-  
+
         setClothes(sendClothes);
       } catch (error) {
         alert(error);
