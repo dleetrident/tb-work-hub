@@ -17,7 +17,9 @@ const ClothesCard = (props) => {
   useEffect(() => {
     const fetchClothes = async () => {
       try {
-        const response = await fetch("/clothes");
+        const response = await fetch(
+          "https://tb-work-hub.herokuapp.com/clothes"
+        );
         const data = await response.json();
         const sendClothes = data;
         console.log(sendClothes[0].clothe);
