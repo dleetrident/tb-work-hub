@@ -14,6 +14,9 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const errorClear = () => {
+    setError("");
+  };
   const submitHandler = async (e) => {
     e.preventDefault();
 
@@ -39,7 +42,6 @@ const Login = () => {
       } catch {
         return setError("failed to login");
       }
-      setError("");
     }
   };
 
@@ -52,6 +54,7 @@ const Login = () => {
           <div className="field">
             <label className="label" htmlFor="email"></label>
             <input
+              onChange={errorClear}
               className={classes.textinput}
               type="text"
               id="email"
@@ -63,6 +66,7 @@ const Login = () => {
           <div className="field">
             <label className="label" htmlFor="password"></label>
             <input
+              onChange={errorClear}
               className={classes.textinput}
               type="text"
               id="password"
