@@ -16,7 +16,7 @@ const Login = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    setError("");
+
     if (
       emailRef.current.value.length < 5 ||
       passwordRef.current.value.length < 5
@@ -39,6 +39,7 @@ const Login = () => {
       } catch {
         return setError("failed to login");
       }
+      setError("");
     }
   };
 
