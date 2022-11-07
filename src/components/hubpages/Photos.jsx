@@ -5,7 +5,13 @@ import classes from "./Photos.module.css";
 import useGetNews from "../../hooks/useGetNews";
 import PlusImg from "../../Assets/PlusImg.png";
 import { auth, storage } from "../../firebase";
-import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
+import {
+  ref,
+  uploadBytes,
+  listAll,
+  getDownloadURL,
+  deleteObject,
+} from "firebase/storage";
 import { v4 } from "uuid";
 
 const Photos = () => {
@@ -44,6 +50,24 @@ const Photos = () => {
     console.log(uploaded);
   }, [uploaded]);
 
+  const deleteHandler = (e) => {
+    console.log(e.target.id);
+    const imageRef = ref(storage, e.target.id);
+
+    deleteObject(imageRef)
+      .then(() => {
+        alert("delete successful");
+        setFileList((prevValue) =>
+          [...prevValue].filter((item) => {
+            return item !== e.target.id;
+          })
+        );
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <Page heading="Photos">
       <div className={classes.container}>
@@ -59,6 +83,12 @@ const Photos = () => {
             return (
               <div className={classes.imgdiv} key={index} id={index}>
                 <img className={classes.photo} src={url} alt="" />
+                <button
+                  className={classes.deletebutton}
+                  onClick={deleteHandler}
+                  id={url}>
+                  Delete
+                </button>
               </div>
             );
           })}

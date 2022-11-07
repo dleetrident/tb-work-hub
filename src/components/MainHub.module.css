@@ -27,3 +27,19 @@
     grid-template-columns: 1fr;
   }
 }
+
+.backbutton {
+  color: white;
+  font-weight: bolder;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  width: 6rem;
+  position: absolute;
+  left: 3rem;
+  top: 1.7rem;
+}
+.backbutton:hover {
+  color: black;
+  border-color: black;
+}

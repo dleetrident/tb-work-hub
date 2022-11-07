@@ -3,7 +3,7 @@ import AuthContext from "../store/auth-context";
 import Card from "../ui/Card";
 import WeatherCard from "./hubcards/WeatherCard";
 import classes from "./MainHub.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NewsCard from "./hubcards/NewsCard";
 import SportsCard from "./hubcards/SportsCard";
 import PhotosCard from "./hubcards/PhotosCard";
@@ -14,9 +14,16 @@ import AuthProvider from "../store/AuthProvider";
 const MainHub = () => {
   const authCtx = useContext(AuthContext);
   console.log(authCtx);
+  const navigate = useNavigate();
+  const backHandler = (e) => {
+    navigate("/login");
+  };
 
   return (
     <div className={classes.container}>
+      <button onClick={backHandler} className={classes.backbutton}>
+        &#8617; Back to Login
+      </button>
       <h1>{authCtx.userName && `Good Day ${authCtx.userName}`}</h1>
       <div className={classes.gridcontainer}>
         <WeatherCard></WeatherCard>
