@@ -56,7 +56,6 @@ const Photos = () => {
 
     deleteObject(imageRef)
       .then(() => {
-        alert("delete successful");
         setFileList((prevValue) =>
           [...prevValue].filter((item) => {
             return item !== e.target.id;
