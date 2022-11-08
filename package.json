@@ -34,7 +34,7 @@
   },
   "scripts": {
     "view": "react-scripts start",
-    "start": "node app",
+    "start": "nodemon server/app.js --ignore client",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

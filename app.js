@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
 const fs = require("fs");
 const { parseString, builder } = require("xml2js");
 const cors = require("cors");
@@ -10,15 +11,11 @@ const { request } = require("http");
 
 const PORT = process.env.PORT || 5000;
 
+app.use(express.static(path.resolve(__dirname, "../build")));
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
-  app.use("*", express.static("build"));
-  app.get("*", (req, res) => {
-    req.sendFile(path.resolve(__dirname, "build", "index.html"));
-  });
-}
 // Clothes
 app.get("/clothes", (req, res) => {
   const options = {
@@ -28,7 +25,7 @@ app.get("/clothes", (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      // console.log(response.data);
+      console.log(response.data);
 
       res.json(response.data);
     })
@@ -65,9 +62,10 @@ app.get("/newsfeed", (req, res) => {
 
 // cors
 
-app.listen(PORT, (err) => {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(`listening on port ${PORT}`);
+const publicPath = path.join(__dirname, "build");
+app.use(express.static(publicPath));
+console.log(publicPath);
+app.get("/", (req, res) => {
+  res.sendFile(path.join(publicPath, "index.html"));
 });
+app.listen(PORT, () => console.log(`server is running on PORT=${PORT}`));
