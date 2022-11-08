@@ -1,2 +1,35 @@
 .container {
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.textcontainer {
+  width: 70%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.icon {
+  width: 30%;
+}
+
+h2,
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .icon {
+    height: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .icon {
+    margin-top: 4%;
+    height: 40%;
+  }
 }

@@ -14,13 +14,19 @@ const ClothesCard = (props) => {
   const [percentageClothes, setPercentageClothes] = useState({});
   const [displayLabels, setDisplayLabels] = useState(true);
   useEffect(() => {
+    fetch("/clothes")
+      .then((res) => res.json())
+      .then((data) => setClothes(data));
     const fetchClothes = async () => {
       try {
         const response = await fetch(
-          "https://imageupload-28cb9-default-rtdb.europe-west1.firebasedatabase.app/payload.json"
+          // "https://imageupload-28cb9-default-rtdb.europe-west1.firebasedatabase.app/payload.json"
+          "/clothes"
         );
+
         const data = await response.json();
         const sendClothes = data;
+        console.log(data);
 
         setClothes(sendClothes);
       } catch (error) {
@@ -30,6 +36,7 @@ const ClothesCard = (props) => {
     fetchClothes();
     setWindowWidth(window.innerWidth);
   }, []);
+
   useEffect(() => {
     if (clothes) {
       let clothesArray = clothes.map((item) => {

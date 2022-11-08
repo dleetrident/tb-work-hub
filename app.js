@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
-
+const fs = require("fs");
+const { parseString, builder } = require("xml2js");
 const cors = require("cors");
-
+let xmlParser = require("xml2json");
 const path = require("path");
 const axios = require("axios");
+const { request } = require("http");
+const xmlparser = require("express-xml-bodyparser");
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
@@ -25,7 +28,8 @@ app.get("/clothes", (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
+
       res.json(response.data);
     })
     .catch((error) => {
@@ -34,6 +38,39 @@ app.get("/clothes", (req, res) => {
 });
 
 // Clothes
+// cors
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
+app.get("/newsfeed", (req, res) => {
+  const options = {
+    method: "GET",
+    url: "https://www.mirror.co.uk/?service=rss",
+    headers: {
+      "Content-Type": "application/xml; charset=utf-8",
+    },
+  };
+  axios
+    .request(options)
+    .then((response) => {
+      // console.log(response.data);
+      // const xml = fs.readFileSync(response.data).toString();
+      // parseString(xml, function (err, data) {
+      //   console.dir(data);
+      // });
+      // console.log(xml);
+      console.log("JSON output", xmlParser.toJson(response.data));
+      res.json(xmlParser.toJson(response.data));
+      // res.json(response.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
+// cors
 
 app.listen(PORT, (err) => {
   if (err) {
