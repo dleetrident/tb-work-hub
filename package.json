@@ -1,6 +1,7 @@
 {
   "name": "tb-work-hub",
   "version": "0.1.0",
+  "engines": "16.18.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
