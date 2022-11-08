@@ -7,7 +7,7 @@ let xmlParser = require("xml2json");
 const path = require("path");
 const axios = require("axios");
 const { request } = require("http");
-const xmlparser = require("express-xml-bodyparser");
+
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
@@ -55,15 +55,8 @@ app.get("/newsfeed", (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      // console.log(response.data);
-      // const xml = fs.readFileSync(response.data).toString();
-      // parseString(xml, function (err, data) {
-      //   console.dir(data);
-      // });
-      // console.log(xml);
       console.log("JSON output", xmlParser.toJson(response.data));
       res.json(xmlParser.toJson(response.data));
-      // res.json(response.data);
     })
     .catch((error) => {
       console.log(error);
