@@ -3,7 +3,6 @@ import { useState } from "react";
 import Page from "../../ui/Page";
 import classes from "./News.module.css";
 import useGetNews from "../../hooks/useGetNews";
-import { RSSProps } from "react-rss/types";
 
 const News = () => {
   const data = useGetNews();
